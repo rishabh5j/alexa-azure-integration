@@ -185,6 +185,8 @@ skill_response = SkillAdapter(
     skill=sb.create(), skill_id="amzn1.ask.skill.2b0a8f39-0266-440e-ae6a-c9ea8b73bb79", app=app, verifiers=[])
 
 skill_response.register(app=app, route="/api")
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True)
+try:
+    if __name__ == '__main__':
+        app.run(host="0.0.0.0",debug=True)
+except Exception as e:
+    logger.info(f"Exception raised: {e}")
