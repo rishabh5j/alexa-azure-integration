@@ -1,0 +1,7 @@
+{
+    "create" : {
+        "Linux vm" : {
+            "template_name" : "101-vm-simple-linux"
+        }
+    }
+}
